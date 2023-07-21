@@ -1,0 +1,292 @@
+/*retirando o  select de copy da pag*/
+body{
+    user-select: none;
+}
+
+
+/*aplicando o formato e dimensões de tamanhos de layout do container com os button com a largura do background  com display:grid;
+, todo o posicionamento de buttons está dentro de grid-template-area:"resposta    resposta      resposta       resposta"
+     "header-AC   porcentagem   multiplicação  divisão "
+     "sete        oito          nove           igual"
+     "quatro      cinco         seis           menos"
+     "umm         dois          tres           adição"
+     "zer         zer           ponto          adição";*/
+.container{
+    margin: 8em 35em;
+    width: 22em;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows:  repeat(6, 50px);
+    grid-gap: 10px;
+    grid-template-areas: 
+     "resposta    resposta      resposta       resposta"
+     "header-AC   porcentagem   multiplicação  divisão "
+     "sete        oito          nove           igual"
+     "quatro      cinco         seis           menos"
+     "umm         dois          tres           adição"
+     "zer         zer           ponto          adição";
+     padding: 20px;
+     background-color: rgb(164, 158, 158);
+     box-shadow:  1px 2px 5px 2px rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+}
+
+
+/*aplicando efeito de transição de hover e tamanho de fonte dos numeros e algarismos*/
+button{
+    font-size: 20px;
+    transition: all .1s;
+}
+
+
+/*aplicando efeitos de transições com hover nos buttons*/
+button:hover{
+    background-color: rgb(220, 219, 219);
+    transition: all .3s;
+}
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.resposta{
+    grid-area: resposta;
+    background-color: rgb(208, 206, 206);
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+    padding:1em 0.5em 0 0;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.header-AC{
+    grid-area: header-AC;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.porcentagem{
+    grid-area: porcentagem;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.multiplicação{
+    grid-area: multiplicação;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.divisão{
+    grid-area: divisão;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.sete{
+    grid-area: sete;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.oito{
+    grid-area: oito;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.nove{
+    grid-area: nove;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.igual{
+    grid-area: igual;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.quatro{
+    grid-area: quatro;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.cinco{
+    grid-area: cinco;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.seis{
+    grid-area: seis;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.menos{
+    grid-area: menos;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.umm{
+    grid-area: umm;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.dois{
+    grid-area: dois;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.tres{
+    grid-area: tres;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.ponto{
+    grid-area: ponto;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.adição{
+    grid-area: adição;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+/*editando cada button de acordo com seu posicionamento do grid areas/ os efeitos são iguais para todos*/
+.zer{
+    grid-area: zer;
+    border: none;
+    border-top: 2.5px solid white;
+    border-left: 2.5px solid white;
+    border-right: 2.5px solid rgb(93, 93, 93);
+    border-bottom: 2.5px solid rgb(93, 93, 93);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
